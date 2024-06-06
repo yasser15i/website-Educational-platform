@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0D0D26;
+    color: #EEE;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header {
+    background-color: #7B113A;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(53, 35, 35, 0.1);
+    animation: slideIn 1s ease-in-out;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+    animation: bounceIn 1s ease-in-out;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #6E6B7B;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 20px;
+    background-color: #0D0D26;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.content h2, .completed-courses h2, .incomplete-courses h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.course-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-list li {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #7B113A;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+    transition: transform 0.3s;
+}
+
+.course-list li:hover {
+    transform: scale(1.05);
+}
+
+.course-list h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.course-list p {
+    font-size: 16px;
+    color: #EEE;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.course-list img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+.course-list img:hover {
+    transform: scale(1.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+th, td {
+    border: 1px solid #EEE;
+    padding: 10px;
+    text-align: left;
+    color: #EEE;
+    animation: slideIn 2s ease-in-out;
+}
+
+th {
+    background-color: #7B113A;
+}
+
+td {
+    background-color: #0D0D26;
+}
+
+.status.completed {
+    color: #00FF00;
+    animation: bounceIn 2.5s ease-in-out;
+}
+
+.status.incomplete {
+    color: #FFD700;
+    animation: bounceIn 2.5s ease-in-out;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #EEE;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+footer {
+    background-color: #7B113A;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    animation: fadeIn 3s ease-in-out;
+}
